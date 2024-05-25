@@ -26,11 +26,14 @@ const corsOptions = {
     "Origin, X-Requested-With, Content-Type, Accept, Authorization",
 };
 
-
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/product", router);
 app.use("/order", ordeRouter);
+
+app.use("/", (req, res) => {
+  res.send("Server working");
+});
 
 const PORT = process.env.PORT;
 
