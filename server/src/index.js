@@ -10,7 +10,7 @@ const app = express();
 
 dotenv.config();
 
-const allowedOrigins = ["https://obcommerce.netlify.app"];
+const allowedOrigins = ["https://obcommerce.netlify.app","http://localhost:5173"];
 
 const corsOptions = {
   origin: (origin, callback) => {
