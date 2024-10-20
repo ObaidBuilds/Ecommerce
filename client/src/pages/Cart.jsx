@@ -1,7 +1,6 @@
 import React from "react";
 import CartCard from "../components/CartCard";
 import Checkout from "../components/Checkout";
-import NewNav from "../components/NewNav";
 import Nav from "../components/Nav";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
