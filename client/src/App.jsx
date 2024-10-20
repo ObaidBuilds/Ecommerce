@@ -1,30 +1,38 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Product from "./pages/Product";
-import Cart from "./pages/Cart";
-import Search from "./pages/Search";
-import Categories from "./pages/Categories";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Checkout from "./pages/Checkout";
-import Order from "./pages/Order";
+import Loader from "./components/Loader";
+const Chatbot = lazy(() => import("./pages/Chatbot"));
+const Interest = lazy(() => import("./pages/Interest"));
+const Order = lazy(() => import("./pages/Order"));
+const Checkout = lazy(() => import("./pages/Checkout"));
+const Categories = lazy(() => import("./pages/Categories"));
+const Search = lazy(() => import("./pages/Search"));
+const Cart = lazy(() => import("./pages/Cart"));
+const Product = lazy(() => import("./pages/Product"));
+const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
     <Router>
       <ToastContainer />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/cart" element={<Cart />} />
-        <Route exact path="/search/:query" element={<Search />} />
-        <Route exact path="/collection/:category" element={<Categories />} />
-        <Route exact path="/product/:name" element={<Product />} />
-        <Route exact path="/checkout" element={<Checkout />} />
-        <Route exact path="/checkout/success" element={<Order />} />
-      </Routes>
-      <Footer />
+
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/cart" element={<Cart />} />
+          <Route exact path="/interest" element={<Interest />} />
+          <Route exact path="/chatbot" element={<Chatbot />} />
+          <Route exact path="/search/:query" element={<Search />} />
+          <Route exact path="/collection/:category" element={<Categories />} />
+          <Route exact path="/product/:name" element={<Product />} />
+          <Route exact path="/checkout" element={<Checkout />} />
+          <Route exact path="/checkout/success" element={<Order />} />
+        </Routes>
+        <Footer />
+      </Suspense>
     </Router>
   );
 };

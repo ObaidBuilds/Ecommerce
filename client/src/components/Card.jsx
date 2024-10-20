@@ -8,6 +8,7 @@ const Card = ({ product }) => {
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
+    localStorage.setItem("products", JSON.stringify(product));
   };
 
   return (

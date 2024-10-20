@@ -27,7 +27,11 @@ const Home = () => {
     <>
       <Nav />
       <main id="home">
-        <MyCarousel />
+        {/* <MyCarousel /> */}
+        <img
+          src="https://img.freepik.com/free-photo/front-view-expensive-perfume-bright-table-fragnance-branch_140725-148383.jpg?t=st=1709870870~exp=1709874470~hmac=85c77a60780e3225dbe34e00aae1d5841729a9a671e1fab15a9d918548cc1a3a&w=740"
+          alt=""
+        />
       </main>
       <section className="categories">
         <div className="category_left">

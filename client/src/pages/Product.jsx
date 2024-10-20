@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useAllProductsQuery } from "../redux/api/product";
 import { addToCart } from "../redux/reducers/cartSlice";
 import { useDispatch } from "react-redux";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -31,6 +32,10 @@ const Product = () => {
     }
   }, [name, products]);
 
+  useEffect(() => {
+    localStorage.setItem("products", JSON.stringify(productDetail));
+  }, [productDetail])
+
   const handleAddCart = (product) => {
     dispatch(addToCart(product));
   };
@@ -40,7 +45,9 @@ const Product = () => {
   };
 
   if (!productDetail) {
-    return <div>Loading...</div>;
+    return <div className="w-screen h-screen flex justify-center item-center" >
+      <ClipLoader color="black" size={19}/>
+    </div>;
   }
 
   return (

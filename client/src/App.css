@@ -1,5 +1,9 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+  font-size: 1rem !important;
 }
 
 li {
@@ -13,10 +17,24 @@ a {
 body {
   width: 100vw;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+  visibility: hidden;
+}
+
+#home{
+  margin-left: 0 !important;
+}
+
+#home img{
+  width: 100%;
+  height: 90%;
 }
 
 button {
@@ -61,7 +79,6 @@ button {
 .orders h1 {
   font-size: 3rem;
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .check_btn{
@@ -211,7 +228,6 @@ ________________________________________ */
 }
 
 .search h1 {
-  font-family: "Gill Sans MT";
   margin: 40px 0px 30px 0px;
 }
 
@@ -221,7 +237,6 @@ ________________________________________ */
   width: 550px;
   border-radius: 15px;
   border: 1px solid black;
-  font-family: "Gill Sans MT";
   font-size: 1.1rem;
 }
 
@@ -230,9 +245,8 @@ ________________________________________ */
 }
 
 #home {
-  height: 500px;
-  width: 100%;
-  margin-top: 77px;
+  margin-top: 60px;
+  height: 560px;
 }
 
 .slider .carousel .slide img {
@@ -261,7 +275,6 @@ ________________________________________ */
 }
 
 .category_left h1 {
-  font-family: "Gill Sans MT";
   font-size: 3.4rem;
   font-weight: 400;
 }
@@ -311,7 +324,6 @@ ________________________________________ */
 .feature h1 {
   text-align: center;
   font-size: 2rem;
-  font-family: "Gill Sans MT";
 }
 
 .feature_container {
@@ -342,7 +354,6 @@ ________________________________________ */
   font-weight: 550;
   font-size: 1.2rem;
   color: gray;
-  font-family: "Gill Sans MT";
 }
 
 .card_btn {
@@ -352,7 +363,6 @@ ________________________________________ */
   background-color: transparent;
   border: 1px solid black;
   border-radius: 5px;
-  font-family: "Gill Sans MT";
   font-size: 1rem;
 }
 
@@ -375,13 +385,11 @@ ________________________________________ */
   font-weight: 550;
   font-size: 1.3rem;
   color: black;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .prices span {
   text-decoration: line-through;
   font-size: 0.9rem;
-  font-family: "Gill Sans MT";
 }
 
 .btn_div {
@@ -396,7 +404,6 @@ ________________________________________ */
   background-color: black;
   border-radius: 10px;
   border: 1px solid black;
-  font-family: "Gill Sans MT";
 }
 
 /* _______________________________________
@@ -408,7 +415,6 @@ ________________________________________ */
   height: 100vh;
   display: flex;
   gap: 30px;
-  font-family: "Gill Sans MT";
   margin-top: 130px;
 }
 
@@ -446,7 +452,6 @@ ________________________________________ */
   font-size: 3rem;
   font-weight: 500;
   line-height: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .detail_right p {
@@ -473,14 +478,11 @@ ________________________________________ */
   font-weight: 550;
   font-size: 1.5rem;
   color: black;
-
-  font-family: "Courier New", Courier, monospace;
 }
 
 .detail_prices span {
   text-decoration: line-through;
   font-size: 0.9rem;
-  font-family: "Gill Sans MT";
 }
 
 .size {
@@ -509,7 +511,6 @@ ________________________________________ */
   border: 1px solid black;
   font-size: 1.1rem;
   font-weight: 500;
-  font-family: "Gill Sans MT";
   background-color: white;
   color: black;
 }
@@ -621,14 +622,12 @@ p {
   color: green;
   font-weight: 550;
   font-size: 1.2rem;
-  font-family: "Gill Sans MT";
 }
 
 .bold {
   font-weight: 600;
   font-size: 1rem;
   color: gray;
-  font-family: "Gill Sans MT";
 }
 
 .bord_green {
@@ -651,13 +650,18 @@ p {
   gap: 15px;
 }
 
+.checkout_btnn{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .checkout_btnn button {
   width: 95%;
-  padding: 12px;
+  padding: 7px;
   background-color: #312e8f;
   color: white;
   border: 1px solid #312e8f;
-  font-family: "Gill Sans MT";
   font-size: 1.1rem;
 }
 
@@ -744,18 +748,15 @@ p {
 .prices p {
   font-size: 1.2rem;
   color: black;
-  font-family: "Gill Sans MT";
 }
 
 .prices span {
   text-decoration: line-through;
   font-size: 0.9rem;
-  font-family: "Gill Sans MT";
 }
 
 .greenn {
   color: green;
-  font-family: "Gill Sans MT";
   margin-top: 15px;
 }
 
@@ -766,7 +767,6 @@ p {
   background-color: transparent;
   color: gray;
   font-weight: 550;
-  font-family: "Gill Sans MT";
   border: none;
   font-size: 1.1rem;
   transition: all ease-in-out 0.2s;
@@ -814,7 +814,6 @@ ________________________________________ */
 
 .checkout_left h1 {
   font-size: 1.7rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .checkout_right {
@@ -839,7 +838,6 @@ ________________________________________ */
 .short {
   margin-top: 15px;
   font-size: 1rem;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .checkout_btn {
@@ -850,7 +848,6 @@ ________________________________________ */
   color: white;
   border: 1px solid #1773b0;
   font-size: 1.2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .checkout_details {
@@ -943,7 +940,6 @@ ________________________________________ */
 
 .category_heading h1 {
   font-size: 2.5rem;
-  font-family: "Gill Sans MT";
 }
 
 .category_heading div {
@@ -960,7 +956,6 @@ ________________________________________ */
 
 .category_heading div h4 {
   font-size: 1.4rem;
-  font-family: "Gill Sans MT";
 }
 
 .category_inner_container {
@@ -979,7 +974,6 @@ ________________________________________ */
   font-size: 2rem;
   margin: 0;
   font-weight: 500;
-  font-family: "Gill Sans MT";
 }
 
 .categorie_right {
@@ -1011,14 +1005,12 @@ footer div img {
 }
 
 footer div p {
-  color: gray;
   font-weight: 500;
 }
 
 .end {
   text-align: center;
   font-weight: 500;
-  font-family: "Gill Sans MT";
 }
 
 .lower_footer {
@@ -1056,7 +1048,6 @@ footer div p {
     font-size: 2.3rem;
     font-weight: 550;
     margin-top: 80px;
-    font-family: "Gill Sans MT";
   }
 
   footer {
@@ -1185,7 +1176,12 @@ footer div p {
 
   .links {
     padding: 0;
-    gap: 45px !important;
+    gap: 15px !important;
+    margin-top: 10px;
+  }
+
+  .links a{
+    font-size: 0.9rem;
   }
 
   .search {
@@ -1227,7 +1223,7 @@ footer div p {
   #home {
     height: auto;
     width: auto;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-left: 5px;
   }
 
@@ -1387,6 +1383,7 @@ footer div p {
   }
 
   .checkout_btn .search_inner_container {
+
     margin: 30px 0px 10px 0px;
     justify-content: space-around;
   }
