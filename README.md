@@ -21,25 +21,16 @@
 ## _Features_ :
 
 - _Product Browsing & Filtering_
-  
 - _Cart & Checkout Flow_
-
 - _Payment Integration Stripe_ 
-
 - _Order Management_ 
-
 - _Search & Category Filtering_
-
 - _Mobile Responsive UI_
-
 - _AI Powered Chatbot_
-
 - _AI User Interest Analysis_
 
 ## _Tech Stack_ :
 
 - _MERN Stack_
-
 - _Redux & React Query_
-
 - _AI Integration with Gemini_
