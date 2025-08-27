@@ -57,12 +57,12 @@ const Nav = () => {
             <li>Home</li>
           </Link>
           <li onClick={handleToggle}>Search</li>
-          <Link to={"/interest"}>
+{/*           <Link to={"/interest"}>
             <li>Interest</li>
-          </Link>
-          <Link to={"/chatbot"}>
+          </Link> */}
+{/*           <Link to={"/chatbot"}>
             <li>Chatbot</li>
-          </Link>
+          </Link> */}
           <Link to={"/cart"}>
             <li>Cart ({cartLen})</li>
           </Link>
